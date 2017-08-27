@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.math.dhruv.mathformulae.MainActivityn"
+    tools:showIn="@layout/app_bar_main_activityn">
+>
+<!--
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.math.dhruv.mathformulae.MainActivityn"
+    tools:showIn="@layout/app_bar_main_activityn">
+-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical|center_horizontal"
+        android:text="FormUCalc"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp"
+
+        android:text="Form - Formulae"
+        android:layout_below="@id/textView2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+
+        android:text="U - Unit Convertor"
+        android:layout_below="@id/textView3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+
+        android:text="Calc - Calculator"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        android:layout_below="@id/textView5"
+        tools:gravity="top" />
+
+    </LinearLayout>
+<!--
+</android.support.constraint.ConstraintLayout>
+-->

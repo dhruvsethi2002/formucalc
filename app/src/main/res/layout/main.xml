@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	>
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+		android:id="@+id/textview1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:text="FORMULAE "
+		android:textSize="40sp"
+		android:textStyle="bold"
+		android:textColor="#1E88E5"
+		android:singleLine="true"
+		android:enabled="false"
+		android:layout_gravity="center_horizontal|top"
+		/>
+	<Button
+		android:id="@+id/polygons"
+		android:layout_width="300dp"
+		android:layout_height="60dp"
+		android:padding="6dp"
+		android:gravity="left"
+		android:text="Polygons "
+		android:textSize="20sp"
+		android:textColor="#000000"
+		android:layout_gravity="left"
+		/>
+	<Button
+		android:id="@+id/trig"
+		android:layout_width="300dp"
+		android:layout_height="60dp"
+		android:padding="8dp"
+		android:gravity="left"
+		android:text="Trigonometric ratios"
+		android:textSize="20sp"
+		android:textColor="#000000"
+		android:layout_gravity="left"
+		/>
+	<Button
+		android:id="@+id/fig3d"
+		android:layout_width="300dp"
+		android:layout_height="60dp"
+		android:padding="8dp"
+		android:gravity="left"
+		android:text="3D Figures "
+		android:textSize="20sp"
+		android:textColor="#000000"
+		android:layout_gravity="left"
+		/>
+	<Button
+		android:id="@+id/sets"
+		android:layout_width="300dp"
+		android:layout_height="60dp"
+		android:padding="8dp"
+		android:gravity="left"
+		android:text="Number Sets"
+		android:textSize="20sp"
+		android:textColor="#000000"
+		android:layout_gravity="left"
+		/>
+	<Button
+		android:id="@+id/algebra"
+		android:layout_width="300dp"
+		android:layout_height="60dp"
+		android:padding="8dp"
+		android:gravity="left"
+		android:text="Algebra"
+		android:textSize="20sp"
+		android:textColor="#000000"
+		android:layout_gravity="left"
+		/>
+	<Button
+		android:id="@+id/differential"
+		android:layout_width="300dp"
+		android:layout_height="60dp"
+		android:padding="8dp"
+		android:gravity="left"
+		android:text="Differential Equations"
+		android:textSize="20sp"
+		android:textColor="#000000"
+		android:layout_gravity="left"
+		/>
+	<Button
+		android:id="@+id/probability"
+		android:layout_width="300dp"
+		android:layout_height="60dp"
+		android:padding="8dp"
+		android:gravity="left"
+		android:text="Probability "
+		android:textSize="20sp"
+		android:textColor="#000000"
+		android:layout_gravity="left"
+		/>
+	<Button
+		android:id="@+id/button1"
+		android:layout_width="300dp"
+		android:layout_height="60dp"
+		android:padding="8dp"
+		android:gravity="left"
+		android:text="Circles"
+		android:textSize="20sp"
+		android:textColor="#000000"
+		android:layout_gravity="left"
+		/>
+
+			<Button
+				android:id="@+id/stat"
+				android:layout_width="300dp"
+				android:layout_height="60dp"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:padding="8dp"
+				android:text="Statistics"
+				android:textColor="#000000"
+				android:textSize="20sp"
+				/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
