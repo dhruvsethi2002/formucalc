@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.math.dhruv.mathformulae">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -19,6 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
         <activity
             android:name=".MainActivity" android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"/>
@@ -93,6 +98,12 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".CalActivity" android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".phy" android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chem" android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
     </application>
 

@@ -3,9 +3,13 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/ma"
+
+            android:title="                         MATH" />
+        <item
             android:id="@+id/nav_for"
 
-            android:title="Formualae" />
+            android:title="Formulae" />
         <item
             android:id="@+id/nav_cal"
 
@@ -14,6 +18,28 @@
             android:id="@+id/nav_uni"
 
             android:title="Unit Convertor" />
+        <item
+            android:id="@+id/no"
+
+            android:title="--------------------------" />
+        <item
+            android:id="@+id/nav_phy"
+
+            android:title="                         PHYSICS" />
+
+        <item
+            android:id="@+id/nor"
+
+            android:title="--------------------------" />
+        <item
+            android:id="@+id/nav_chem"
+
+            android:title="                         CHEMISTRY" />
+
+        <item
+            android:id="@+id/nof"
+
+            android:title="--------------------------" />
     </group>
 
 

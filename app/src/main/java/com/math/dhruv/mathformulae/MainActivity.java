@@ -17,6 +17,12 @@ import android.net.*;
 import android.text.*;
 import android.util.*;
 import android.webkit.*;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+
 import java.util.*;
 import java.text.*;
 
@@ -37,14 +43,23 @@ public class MainActivity extends Activity {
 	private Button stat;
 
 	private Intent page_intent = new Intent();
+	private InterstitialAd mInterstitialAd;
 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        initialize();
+		MobileAds.initialize(this, "ca-app-pub-7892936734712444~9081106036");
+		mInterstitialAd = new InterstitialAd(this);
+		mInterstitialAd.setAdUnitId("ca-app-pub-7892936734712444/8892693331");
+		mInterstitialAd.loadAd(new AdRequest.Builder().build());
+		initialize();
         initializeLogic();
+		/*AdRequest request = new AdRequest.Builder()
+				.addTestDevice("33BE2250B43518CCDA7DE426D04EE232")
+				.build();*/
+
     }
 
 		@Override
@@ -53,6 +68,26 @@ public class MainActivity extends Activity {
 			inflater.inflate(R.menu.main, menu);
 			return super.onCreateOptionsMenu(menu);
 		}
+
+        @Override
+        protected void onStart() {
+            super.onStart();
+			mInterstitialAd.loadAd(new AdRequest.Builder().build());
+			mInterstitialAd.setAdListener(new AdListener() {
+				@Override public void onAdLoaded() {
+					Log.d("TAG", "Dhruv: Interstitial event onAdLoaded");
+					mInterstitialAd.show();
+				}
+			});
+			/*
+			if (mInterstitialAd.isLoaded()) {
+                Log.d("TAG", "The interstitial was loaded on start");
+                mInterstitialAd.show();
+            } else {
+                Log.d("TAG", "The interstitial wasn't loaded yet on start.");
+            }
+            */
+        }
 
 
 	private void  initialize() {
@@ -73,6 +108,12 @@ public class MainActivity extends Activity {
 			public void onClick(View _v) { 
 				page_intent.setClass(getApplicationContext(), Poly2pageActivity.class);
 				startActivity(page_intent);
+				if (mInterstitialAd.isLoaded()) {
+					Log.d("TAG", "The interstitial was loaded ");
+					mInterstitialAd.show();
+				} else {
+					Log.d("TAG", "The interstitial wasn't loaded yet.");
+				}
 			}
 		});
 		trig.setOnClickListener(new OnClickListener() {
@@ -80,13 +121,19 @@ public class MainActivity extends Activity {
 			public void onClick(View _v) { 
 				page_intent.setClass(getApplicationContext(), Trig2pageActivity.class);
 				startActivity(page_intent);
-			}
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
+            }
 		});
 		fig3d.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View _v) { 
 				page_intent.setClass(getApplicationContext(), Fig3d2pageActivity.class);
 				startActivity(page_intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
 			}
 		});
 		sets.setOnClickListener(new OnClickListener() {
@@ -94,6 +141,9 @@ public class MainActivity extends Activity {
 			public void onClick(View _v) { 
 				page_intent.setClass(getApplicationContext(), SetsActivity.class);
 				startActivity(page_intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
 			}
 		});
 		algebra.setOnClickListener(new OnClickListener() {
@@ -101,6 +151,9 @@ public class MainActivity extends Activity {
 			public void onClick(View _v) { 
 				page_intent.setClass(getApplicationContext(), AlgebraActivity.class);
 				startActivity(page_intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
 			}
 		});
 		differential.setOnClickListener(new OnClickListener() {
@@ -108,6 +161,9 @@ public class MainActivity extends Activity {
 			public void onClick(View _v) { 
 				page_intent.setClass(getApplicationContext(), DifferentialActivity.class);
 				startActivity(page_intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
 			}
 		});
 		probability.setOnClickListener(new OnClickListener() {
@@ -115,6 +171,9 @@ public class MainActivity extends Activity {
 			public void onClick(View _v) { 
 				page_intent.setClass(getApplicationContext(), ProbabilityActivity.class);
 				startActivity(page_intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
 			}
 		});
 		button1.setOnClickListener(new OnClickListener() {
@@ -122,6 +181,9 @@ public class MainActivity extends Activity {
 			public void onClick(View _v) { 
 				page_intent.setClass(getApplicationContext(), Circ2pageActivity.class);
 				startActivity(page_intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
 			}
 		});
 
@@ -131,6 +193,9 @@ public class MainActivity extends Activity {
 			public void onClick(View _v) {
 				page_intent.setClass(getApplicationContext(), Statistics.class);
 				startActivity(page_intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
 			}
 		});
 

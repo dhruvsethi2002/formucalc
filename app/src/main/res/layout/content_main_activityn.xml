@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+        android:layout_gravity="center_vertical|center_horizontal"
         android:gravity="center_vertical|center_horizontal"
         android:text="FormUCalc"
         android:textSize="30sp" />
@@ -64,16 +65,27 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="top"
+        android:layout_below="@id/textView8"
         android:paddingTop="10dp"
         android:paddingLeft="5dp"
-        android:textSize="20sp"
-        android:layout_below="@id/textView5"
-        tools:gravity="top" />
 
-    </LinearLayout>
+        android:text="Physics and Chemistry Formulae/Equations also included."
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:elevation="0dp"
+        android:gravity="bottom"
+        android:text="Made by Dhruv Sethi...August 2017"
+        android:textSize="20sp" />
+
+</LinearLayout>
 <!--
 </android.support.constraint.ConstraintLayout>
 -->

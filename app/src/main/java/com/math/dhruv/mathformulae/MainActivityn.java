@@ -74,6 +74,17 @@ public class MainActivityn extends AppCompatActivity
                 page_intent.setClass(getApplicationContext(), UniConActivity.class);
                 startActivity(page_intent);
             }
+            else if (id == R.id.nav_phy)
+            {
+                page_intent.setClass(getApplicationContext(), phy.class);
+                startActivity(page_intent);
+            }
+            else if (id == R.id.nav_chem)
+            {
+                page_intent.setClass(getApplicationContext(), Chem.class);
+                startActivity(page_intent);
+            }
+
 
 
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

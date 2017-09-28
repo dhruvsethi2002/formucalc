@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "146484843459",
+    "firebase_url": "https://dhruv-aff7c.firebaseio.com",
+    "project_id": "dhruv-aff7c",
+    "storage_bucket": "dhruv-aff7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146484843459:android:ae3491dd79891d01",
+        "android_client_info": {
+          "package_name": "com.math.dhruv.mathformulae"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146484843459-hl805ufu3j909lbuik3r774h9og95rph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT-o6_k0nA5eFJIsG2o67PI-hpgVIyqnA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
